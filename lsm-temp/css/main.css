@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Iransans"; /* این نامی است که در مرحله بعد استفاده می‌کنید */
+  src:
+    url("/assets/fonts/iransans.woff2") format("woff2"),
+    url("/assets/fonts/iransans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: "Iransans";
+  src: url("/assets/fonts/iransans-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+}
+
+body {
+  font-family: "Iransans", Tahoma, Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+h1,h2,h3 {
+  font-family: "Iransans", Tahoma, Arial, sans-serif;
+  font-weight: bold;
+
+}

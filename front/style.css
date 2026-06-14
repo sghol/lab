@@ -1,0 +1,18 @@
+
+body {
+    background: #9B9EA4;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: #984936;
+    padding: 1em;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background: #984936ea;
+}
+

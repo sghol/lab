@@ -7,12 +7,10 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		n, err := fmt.Fprintf(w, "hello world")
+		_, err := fmt.Fprintf(w, "<h1>hello world</h1>")
 		if err != nil {
 			fmt.Println("Error :: ", err)
 		}
-
-		fmt.Println("Number of bytes", n)
 	})
 
 	_ = http.ListenAndServe(":8080", nil)
