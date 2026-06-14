@@ -1,4 +1,3 @@
-
 # occipyed port
 port = None
 
@@ -9,11 +8,8 @@ if port is None:
 print(port)
 
 
-
 port = None
 
 port = port or 8000
 
 print(port)
-
-

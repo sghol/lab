@@ -6,8 +6,6 @@ with open("packages") as pkg_file:
     packages_data = pkg_file.read()
 
 
-
-
 packages = packages_data.split("\n\n")
 
 packages_list = []
@@ -19,18 +17,17 @@ for package in packages:
         field, *values = row.split(" :")
         field = field.strip()
         if field in ["Name", "Install Date"]:
-            package_dict[field] = ''.join(values).strip()
+            package_dict[field] = "".join(values).strip()
             packages_list.append(package_dict)
 
-        
-        
+
 packages = []
 
-date_format = '%a %d %b %Y %I:%M:%S %p %z'
+date_format = "%a %d %b %Y %I:%M:%S %p %z"
 
 for pkg in packages_list:
     name = pkg["Name"]
-    install_date = pkg["Install Date"] 
+    install_date = pkg["Install Date"]
     install_date = datetime.strptime(install_date, date_format)
     packages.append({"Name": name, "Install Date": install_date})
 #
@@ -48,6 +45,3 @@ for pkg in pkgs_name:
 
 for i, pkg in enumerate(pkgs):
     print(i, pkg)
-
-
-
