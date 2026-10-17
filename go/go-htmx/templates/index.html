@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Go + HTMX</title>
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+</head>
+<body>
+  <h1>Hello, {{.Name}}</h1>
+  <button hx-get="/students" hx-target="#result" hx-swap="innerHTML">
+    Say hello
+  </button>
+  <div id="result"></div>
+</body>
+</html>

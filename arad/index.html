@@ -1,0 +1,39 @@
+<h1>Login</h1>
+
+<input type="text" id="username" placeholder="نام کاربری" />
+<input type="password" id="password" placeholder="رمز عبور" />
+<input type="number">
+<input type="date">
+<select>
+  <option>Red</option>
+  <option>Blue</option>
+  <option>Yellow</option>
+</select>
+<br>
+<label>
+  <input type="checkbox">
+  Am i cool
+</label>
+<br>
+<button id="login">Login</button>
+<br>
+<img src="/home/saeed/pix/wallpapers/b-004.jpg" width=256 height=256>
+
+<a href="https://google.com">Go to google</a>
+
+
+<script>
+  var usernameInput = document.getElementById("username");
+  var passwordInput = document.getElementById("password");
+
+  var loginBtn = document.getElementById("login");
+  loginBtn.addEventListener("click", () => {
+    var username = usernameInput.value;
+    var password = passwordInput.value;
+    console.log(username);
+    console.log(password);
+  });
+
+
+
+</script>

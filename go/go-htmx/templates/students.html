@@ -1,0 +1,22 @@
+{{if .}}
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{range .}}
+    <tr>
+      <td>{{.Name}}</td>
+      <td>{{.Email}}</td>
+      <td>{{.Grade}}</td>
+    </tr>
+    {{end}}
+  </tbody>
+</table>
+{{else}}
+<p>No students found.</p>
+{{end}}
