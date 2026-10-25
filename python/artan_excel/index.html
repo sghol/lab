@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Excel Validator</title>
+  <!-- SheetJS from CDN (see "offline" section below to bundle it) -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.2/package/dist/xlsx.full.min.js"></script>
+  <link rel"stylesheet" href="./style.css"></link>
+</head>
+<body>
+  <h1>Excel Validator</h1>
+
+  <input type="file" id="fileInput" accept=".xlsx,.xls,.csv">
+  <div id="status">Choose a file to validate.</div>
+  <button id="downloadBtn" disabled>Download result</button>
+
+  <script src="./script.js"></script>
+</body>
+</html>

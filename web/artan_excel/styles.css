@@ -1,0 +1,167 @@
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+:root {
+  direction: rtl;
+  text-align: right;
+
+  --c-text: #212121;
+  --c-primary: royalblue;
+  --c-secondary: Gainsboro;
+  --c-success: seagreen;
+}
+
+@font-face {
+  font-family: "arad";
+  src:
+    url("Arad.woff2") format("woff2"),
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "arad", system-ui, sans-serif;
+  background-color: floralwhite;
+  color: var(--c-text);
+}
+
+.app {
+  max-width: 720px;
+  min-height: 100dvh;
+  margin: 0rem auto;
+  padding-top: 3rem;
+  padding-bottom: .5rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  min-height: 100dvh;
+}
+
+.app > main {
+  margin: 1rem;
+}
+
+.app > footer {
+  text-align: center;
+  font-size: .85rem;
+}
+
+.features {
+  margin-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.button {
+  outline: 0;
+  border: 0;
+  border-radius: 0.33rem;
+  padding: 0.5rem 1.25rem;
+  color: var(--gray-100);
+  transition: all 0.2s ease;
+  font-size: 0.775rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "arad";
+}
+
+.button-secondary {
+  background-color: var(--c-secondary);
+}
+
+.button-primary {
+  color: white;
+  background-color: var(--c-primary);
+}
+
+
+.button-success {
+  background-color: var(--c-success);
+  color: white;
+}
+
+.button:hover {
+  opacity: .85;
+}
+
+.status {
+  background-color: white;
+  color: darkblue;
+  padding-block: 1rem;
+  padding-inline: .5rem;
+  border-radius: .5rem;
+  margin-block: 1rem;
+  border: 1px solid #dadada;
+  font-size: .875rem;
+}
+
+/* =======================
+ * UTILITIES
+ * =====================*/
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.text-muted {
+  color: gray;
+}
+
+.text-xs {
+  font-size: .25rem;
+}
+
+.text-sm {
+  font-size: .5rem;
+}
+
+.text-md {
+  font-size: .75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.m-1 { margin: .25rem; }
+.m-2 {margin: .5rem; }
+.m-3 {margin: .75rem; }
+.m-4 {margin: 1rem; }
+
+.mt-1 { margin-top: .25rem; }
+.mt-2 {margin-top: .5rem; }
+.mt-3 {margin-top: .75rem; }
+.mt-4 {margin-top: 1rem; }
+
+.mb-1 { margin-bottom: .25rem; }
+.mb-2 {margin-bottom: .5rem; }
+.mb-3 {margin-bottom: .75rem; }
+.mb-4 {margin-bottom: 1rem; }
+
+
+.badge {
+  padding: 0rem .5rem;;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  margin-right: 1rem;
+}
+
+.badge-danger {
+  background-color: darkseagreen;
+}
+

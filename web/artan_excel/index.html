@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <title>Excelito</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.2/package/dist/xlsx.full.min.js" defer ></script>
+    <script src="./script.js" defer></script>
+  </head>
+<body>
+  <div class="app">
+    <header>
+      <h1>اصلاحگر اکسل</h1>
+      <h2>قابلیت ها</h2>
+    </header>
+    <main>
+      <ul class="features">
+        <li>جداکننده ستون نام کامل به ستون نام و ستون نام خانوادگی</li>
+        <li>صحیح سنجی شماره تلفن<span class="badge badge-danger">بزودی</span></li>
+        <li>صحیح سنجی کد ملی (نام کاربری)<span class="badge badge-danger">بزودی</span></li>
+        <li>تبدیل کد به مقدار<span class="badge badge-danger">آینده</span></li>
+      </ul>
+      <input type="file" class="hidden" id="fileInput" accept=".xlsx,.xls,.csv" />
+      <button id="load" class="button button-primary mt-4">انتخاب فایل اکسل</button>
+      <div id="status" class="status">بررسی نتیجه ... </div>
+      <button id="download" class="button button-secondary" disabled>دانلود نتیجه</button>
+    </main>
+    <footer> <p>آرتان ال ام اس 1406</p> </footer>
+  </div>
+</body>
+</html>
